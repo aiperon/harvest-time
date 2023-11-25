@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.harvestapp.com/v2/tasks?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer $HARVEST_ACCESS_TOKEN
+      Harvest-Account-Id:
+      - "$HARVEST_ACCOUNT_ID"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.harvestapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 24 Nov 2023 12:04:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-store
+      X-App-Server:
+      - harvestapp-945747d89-2nfr5
+      X-Robots-Tag:
+      - noindex, nofollow
+      Etag:
+      - W/"962128f25a19bcfb8882a43552ee3a5e"
+      Content-Security-Policy:
+      - default-src *; font-src * data:; img-src * data:; script-src 'strict-dynamic'
+        'nonce-fNUoMOJEADJDmVMrQPJHUQ=='; object-src 'none'; base-uri 'none'; style-src
+        * 'unsafe-inline'; report-uri https://cspreports.harvestapp.com/csp_reports
+      X-Request-Id:
+      - e901f250fa94e34f567722d68573f10f
+      X-Runtime:
+      - '0.047708'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"tasks":[{"id":1,"name":"Startup","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2023-05-28T18:24:00Z","updated_at":"2023-11-07T16:39:51Z"},{"id":2,"name":"Task 1","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2021-10-29T08:57:51Z","updated_at":"2021-10-29T08:57:51Z"},{"id":3,"name":"Task 2","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2021-04-05T10:38:58Z","updated_at":"2021-04-05T10:38:58Z"},{"id":4,"name":"Task 3","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2020-05-11T05:26:23Z","updated_at":"2020-05-11T05:26:23Z"},{"id":5,"name":"Task 4","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-11-06T07:47:18Z","updated_at":"2018-11-06T07:47:18Z"},{"id":6,"name":"Tickets","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-09-23T19:31:24Z","updated_at":"2018-09-23T19:31:24Z"},{"id":7,"name":"Task 5","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-04-02T07:22:49Z","updated_at":"2018-04-02T07:22:49Z"},{"id":8,"name":"Task 6","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-04-02T07:22:49Z","updated_at":"2018-04-02T07:22:49Z"},{"id":9,"name":"Task 7","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-04-02T07:22:49Z","updated_at":"2018-04-02T07:22:49Z"},{"id":10,"name":"Task 8","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-04-02T07:22:49Z","updated_at":"2018-04-02T07:22:49Z"},{"id":11,"name":"Task 9","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2018-04-02T07:22:49Z","updated_at":"2018-04-02T07:22:49Z"},{"id":12,"name":"Analytics","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2013-05-03T14:40:45Z","updated_at":"2015-05-12T08:11:25Z"},{"id":13,"name":"Research","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2013-03-28T17:31:04Z","updated_at":"2013-05-03T14:40:20Z"},{"id":14,"name":"Meeting","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2012-12-21T05:14:13Z","updated_at":"2015-03-27T07:47:48Z"},{"id":15,"name":"Bugfix","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2012-12-04T21:40:46Z","updated_at":"2015-06-12T08:26:50Z"},{"id":16,"name":"Feature","billable_by_default":true,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2012-12-04T21:40:21Z","updated_at":"2015-06-16T09:06:51Z"},{"id":17,"name":"Vacation","billable_by_default":false,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2012-12-04T21:19:33Z","updated_at":"2012-12-04T21:19:33Z"},{"id":18,"name":"Business Development","billable_by_default":false,"default_hourly_rate":null,"is_default":false,"is_active":true,"created_at":"2012-12-04T21:19:33Z","updated_at":"2012-12-04T21:19:33Z"}],"per_page":2000,"total_pages":1,"total_entries":18,"next_page":null,"previous_page":null,"page":1,"links":{"first":"https://api.harvestapp.com/v2/tasks?page=1&per_page=2000&ref=first","next":null,"previous":null,"last":"https://api.harvestapp.com/v2/tasks?page=1&per_page=2000&ref=last"}}'
+  recorded_at: Fri, 24 Nov 2023 12:04:54 GMT
+recorded_with: VCR 6.2.0
